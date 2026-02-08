@@ -1,0 +1,33 @@
+/*************** Reset *********************/
+.web2 {
+  display: grid;
+  grid-template-columns: repeat(2fr, 1fr);
+  gap: 1px;
+  max-width: 500px;
+  margin: 0px auto;
+}
+.web2 img:first-child {
+  grid-column: span 2;
+}
+.web2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+/***desktop****/
+
+@media (min-width: 768px) {
+  .web2 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .tekst {
+    flex: 1;
+  }
+
+  .web2 {
+    flex: 1;
+  }
+}
